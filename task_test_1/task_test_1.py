@@ -41,7 +41,7 @@ def parse_countries():
     return list_of_countries
 
 
-def get_country_data(country_name: str):
+def print_country_data(country_name: str):
     for country_data in parse_countries():
         if country_data["country"] == country_name:
             print(country_data)
@@ -49,7 +49,6 @@ def get_country_data(country_name: str):
 
 
 if __name__ == "__main__":
-
-    get_country_data("Украина")
-    get_country_data("Финляндия")
-    get_country_data("Литва")
+    print_country_data("Украина")
+    print_country_data("Финляндия")
+    print_country_data("Литва")
